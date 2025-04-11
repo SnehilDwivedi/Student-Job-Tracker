@@ -11,11 +11,13 @@ app.use(cors({
   origin: [
     'https://student-job-tracker-eudblm2rv-snehildwivedis-projects.vercel.app',
     'https://student-job-tracker.vercel.app',
+    'https://student-job-tracker-seven.vercel.app', // 🔥 add this
     'http://localhost:5173'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
+
 
 
 // Middleware to parse JSON
