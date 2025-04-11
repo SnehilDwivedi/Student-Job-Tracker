@@ -1,10 +1,11 @@
-const API_BASE_URL = 'https://student-job-tracker-hg3j.onrender.com';
+// src/api.js
+const API_BASE_URL = 'https://student-job-tracker-hg3j.onrender.com/api';
 
 export const getJobs = async () => {
   const response = await fetch(`${API_BASE_URL}/jobs`);
-  if (!response.ok) throw new Error('Failed to fetch jobs');
   return await response.json();
 };
+
 
 export const addJob = async (jobData) => {
   const response = await fetch(`${API_BASE_URL}/jobs`, {
