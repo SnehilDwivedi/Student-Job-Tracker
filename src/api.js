@@ -1,5 +1,5 @@
 // Create a new file src/api.js
-const API_BASE_URL = 'https://student-job-tracker-backend-q5xs.onrender.com/api';
+const API_BASE_URL = 'https://student-job-tracker-hg3j.onrender.com';
 
 export const getJobs = async () => {
   const response = await fetch(`${API_BASE_URL}/jobs`);

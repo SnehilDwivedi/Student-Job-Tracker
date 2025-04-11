@@ -29,10 +29,8 @@ function App() {
     const fetchJobs = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch('http://localhost:5000/api/jobs');
-        if (!response.ok) throw new Error('Failed to fetch jobs');
-        const { data } = await response.json();
-        setJobs(data);
+        const data = await getJobs();
+        setJobs(data.data); // or just setJobs(data) depending on your API response
       } catch (error) {
         console.error('Error fetching jobs:', error);
         alert('Failed to load jobs. Check console for details.');
