@@ -4,9 +4,10 @@ const PORT = process.env.PORT || 5000;
 
 
 
-app.get('/health', (req, res) => {
-  res.sendStatus(200);
+app.get('/', (req, res) => {
+  res.send('Welcome to the Job Tracker API');
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
