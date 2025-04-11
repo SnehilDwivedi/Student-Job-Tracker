@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import Chatbot from './components/Chatbot'; // Adjust path if your folder structure is different
+import { getJobs } from './api';
 
 function App() {
   const [jobs, setJobs] = useState([]);
